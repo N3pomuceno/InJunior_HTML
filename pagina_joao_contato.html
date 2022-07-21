@@ -11,15 +11,18 @@
         <h1>Página de contato</h1>
     </header>
     <main>
-        <h4>Nome, e-mail e conteúdo:</h4>
-        <form>
-            <input type="text" name="Nome">
-            <input type="text" name="Email" size = "50"><br> 
-            <input type="text" name="Conteudo" size = "100"><br>
-            <input type="submit" value="Enviar">
-        </form>
-        <h4>Ou entre em contato com:</h4>
-        <a href="mailto:webmaster@example.com">Mandando um e-mail.</a>
+        <form action="mailto:joaonepomuceno@id.uff.br" method="post" enctype="text/plain">
+            Nome:<br>
+            <input type="text" name="Name"><br>
+            E-mail:<br>
+            <input type="text" name="Mail"><br>
+            Telefone:<br>
+            <input type="tel" id="phone" name="phone" pattern="([0-9]{2})[0-9]{4}-[0-9]{4}"><br>
+            Mensagem:<br>
+            <input type="text" name="comment" size="100"><br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+            </form>
     </main>
     <br>
     <footer>
